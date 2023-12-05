@@ -15,4 +15,103 @@
 
 body {
     background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
 }
+
+main {
+    background-color: #fff;
+    padding: 4.8rem 6.4rem 6.4rem;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+    text-align: center;
+    color: #34355B;
+    
+}
+
+#aligned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen1 h1, .screen2 h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 2.7rem;
+   
+}
+
+.screen1 img:hover {
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#luck {
+    font-size: 2.4rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+    max-width: 28rem;
+    animation:scale-in-center .8s
+
+}
+
+
+button {
+    border-radius: .4rem;
+    background: #FF9500;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    padding: 1.6rem;
+    cursor: pointer;
+    transition: background .3s;
+    
+}
+
+button:hover {
+    background-color:  #ac6501;
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(.1rem, .1rem) rotate(0deg); }
+    10% { transform: translate(-.1rem, -.2rem) rotate(-1deg); }
+    20% { transform: translate(-.3rem, 0) rotate(1deg); }
+    30% { transform: translate(.3rem, .2rem) rotate(0deg); }
+    40% { transform: translate(.1rem, -.1rem) rotate(1deg); }
+    50% { transform: translate(-.1rem, .2rem) rotate(-1deg); }
+    60% { transform: translate(-.3rem, .1rem) rotate(0deg); }
+    70% { transform: translate(.3rem, .1rem) rotate(-1deg); }
+    80% { transform: translate(-.1rem, -.1rem) rotate(1deg); }
+    90% { transform: translate(.1rem, .2rem) rotate(0deg); }
+    100% { transform: translate(.1rem, -.2rem) rotate(-1deg); }
+  }
+  
+@keyframes slide-in-bottom {
+    0%{transform:translateY(25rem);opacity:0;}
+    100%{transform:translateY(0);opacity:1;}
+}
+
+@keyframes scale-in-center {
+    0%{transform:scale(0);opacity:1;}
+    100%{transform:scale(1);opacity:1}}
