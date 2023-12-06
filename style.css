@@ -14,7 +14,9 @@
 }
 
 body {
-    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
     display: grid;
     place-items: center;
     align-items: center;
@@ -51,6 +53,10 @@ main {
     font-family: 'DM Sans', sans-serif;
     margin-bottom: 2.7rem;
    
+}
+
+.screen1 img{
+    cursor: pointer;
 }
 
 .screen1 img:hover {
@@ -115,3 +121,16 @@ button:hover {
 @keyframes scale-in-center {
     0%{transform:scale(0);opacity:1;}
     100%{transform:scale(1);opacity:1}}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
